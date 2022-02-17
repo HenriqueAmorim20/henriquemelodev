@@ -29,7 +29,7 @@ export default {
 
 
 
-      //Headers
+      // Headers
       ScrollReveal().reveal('.header',{
         delay: 300,
         duration: 2000,
@@ -37,7 +37,7 @@ export default {
         origin: "left",
       })
 
-      //About
+      // About
       ScrollReveal().reveal('.section-about-intro',{
         delay: 300,
         duration: 2000,
@@ -81,7 +81,7 @@ export default {
         origin: "bottom",
       })
 
-      //Skills
+      // Skills
       ScrollReveal().reveal('.section-skills-card',{
         delay: 400,
         duration: 2000,
@@ -94,6 +94,22 @@ export default {
         duration: 2000,
         distance: "300px",
         origin: "bottom",
+      })
+
+      // Experience
+      ScrollReveal().reveal('.stepper-step',{
+        delay: 400,
+        duration: 2000,
+        distance: "300px",
+        origin: "bottom",
+        interval: 100,
+      })
+      ScrollReveal().reveal('.stepper-content',{
+        delay: 500,
+        duration: 2000,
+        distance: "300px",
+        origin: "bottom",
+        interval: 100,
       })
 
 
