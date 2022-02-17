@@ -80,6 +80,23 @@ export default {
         distance: "300px",
         origin: "bottom",
       })
+
+      //Skills
+      ScrollReveal().reveal('.section-skills-card',{
+        delay: 400,
+        duration: 2000,
+        distance: "120px",
+        origin: "right",
+        interval: 60,
+      })
+      ScrollReveal().reveal('.section-down',{
+        delay: 500,
+        duration: 2000,
+        distance: "300px",
+        origin: "bottom",
+      })
+
+
     }
   }
 }
