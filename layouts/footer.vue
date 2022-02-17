@@ -106,5 +106,12 @@ export default {
 .footer-media-icon {
   width: 20px;
   margin: 0 10px !important;
+  padding: 3px !important;
+  border-radius: 3px;
+  transition: 0.5s all ease;
+}
+
+.footer-media-icon:hover {
+  background-color: #1094bc;
 }
 </style>

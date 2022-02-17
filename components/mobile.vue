@@ -17,25 +17,12 @@
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             role="img"
-            width="2rem"
-            height="2rem"
             preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 36 36"
+            viewBox="0 0 24 24"
           >
             <path
-              class="clr-i-outline clr-i-outline-path-1"
-              d="M32 29H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z"
-              fill="white"
-            />
-            <path
-              class="clr-i-outline clr-i-outline-path-2"
-              d="M32 19H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z"
-              fill="white"
-            />
-            <path
-              class="clr-i-outline clr-i-outline-path-3"
-              d="M32 9H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2z"
-              fill="white"
+              d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"
+              fill="currentColor"
             />
           </svg>
         </v-app-bar-nav-icon>
@@ -70,7 +57,7 @@
         class="drawer-item"
         @click="scroll(item.name)"
       >
-        <span class="drawer-item-order">{{item.order}}</span>
+        <span class="drawer-item-order">{{ item.order }}</span>
         <span class="drawer-item-name">{{ item.name }}</span>
       </div>
     </v-navigation-drawer>
@@ -139,7 +126,7 @@ export default {
   cursor: pointer;
 }
 
-.drawer-item:hover .drawer-item-name{
+.drawer-item:hover .drawer-item-name {
   color: #1094bc !important;
 }
 

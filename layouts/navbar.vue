@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Mobile v-if="width <= 760" :menu="menu" @scroll="scroll"/>
-    <Desktop v-if="width > 760" :menu="menu" @scroll="scroll"/>
+    <Mobile v-if="width <= 790" :menu="menu" @scroll="scroll"/>
+    <Desktop v-if="width > 790" :menu="menu" @scroll="scroll"/>
   </div>
 </template>
 
@@ -60,7 +60,7 @@ export default {
     // Scroll to element on page
     scroll(to) {
       const element = document.getElementById(to);
-      const y = element?.getBoundingClientRect().top + window.pageYOffset
+      const y = element?.getBoundingClientRect().top + window.pageYOffset - 60
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   },

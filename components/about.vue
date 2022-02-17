@@ -210,6 +210,7 @@ export default {
 </script>
 
 <style scoped>
+
 .section {
   max-width: 1000px;
   margin: 0 auto !important;
