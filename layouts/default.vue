@@ -18,6 +18,69 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  mounted() {
+    this.revealScroll()
+  },
+  methods: {
+    // Method that smoothes scrolling
+    revealScroll() {
+      // Navbar desktop
+
+
+
+      //Headers
+      ScrollReveal().reveal('.header',{
+        delay: 300,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+
+      //About
+      ScrollReveal().reveal('.section-about-intro',{
+        delay: 300,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+      ScrollReveal().reveal('.section-about-name',{
+        delay: 400,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+      ScrollReveal().reveal('.section-about-role',{
+        delay: 500,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+      ScrollReveal().reveal('.section-about-info',{
+        delay: 600,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+      ScrollReveal().reveal('.section-media',{
+        delay: 700,
+        duration: 2000,
+        distance: "200px",
+        origin: "left",
+      })
+      ScrollReveal().reveal('.section-image',{
+        delay: 400,
+        duration: 2000,
+        distance: "200px",
+        origin: "right",
+      })
+      ScrollReveal().reveal('.down-section',{
+        delay: 700,
+        duration: 2000,
+        distance: "300px",
+        origin: "bottom",
+      })
+    }
   }
 }
 </script>
@@ -52,7 +115,7 @@ body {
 
 .main {
   max-width: 1100px;
-  margin: 0 auto !important;
+  margin: 0 auto 100px !important;
 }
 
 .header {

@@ -8,7 +8,7 @@
     <v-row class="section">
       <v-col class="section-about" :cols="width > 750 ? 7 : 12">
         <v-col class="section-about-intro" cols="12">Hello, i'm</v-col>
-        <v-col cols="12" align="center">
+        <v-col class="section-image" cols="12" align="center">
           <v-img
             v-if="width <= 750"
             :src="require('~/static/perfil.jpg')"
