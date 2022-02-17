@@ -28,6 +28,8 @@ export default {
 * {
   margin: 0 !important;
   padding: 0 !important;
+  font-family: "custom" !important;
+  color: #fff !important;
 }
 
 body {
