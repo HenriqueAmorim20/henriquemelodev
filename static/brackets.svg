@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="300 164.665 100 70.595" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="46.531" y="174.508" width="5" height="37" style="stroke-width: 0px; paint-order: stroke; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(-0.766044, 0.642788, -0.642788, -0.766044, 544.42981, 300.114838)" tabindex="0" bx:origin="0.80626 0.536712"/>
+  <rect x="46.531" y="174.508" width="5" height="37" style="stroke-width: 0px; paint-order: stroke; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(-0.766044, -0.642788, 0.642788, -0.766044, 296.30835, 395.122345)" tabindex="0"/>
+  <path d="M -127.13 -152.75 L -120.13 -146.75 L -134.13 -146.75 L -127.13 -152.75 Z" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(0, 1, -1, 0, 246.254486, 326.642181)" tabindex="0" bx:shape="triangle -134.13 -152.75 14 6 0.5 0 1@1366ebe1"/>
+  <rect x="46.531" y="174.508" width="5" height="37" style="stroke-width: 0px; paint-order: stroke; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(0.766044, -0.642788, 0.642788, 0.766044, 155.574722, 99.41716)" tabindex="0" bx:origin="0.80626 0.536712"/>
+  <rect x="46.531" y="174.508" width="5" height="37" style="stroke-width: 0px; paint-order: stroke; stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(0.766044, 0.642788, -0.642788, 0.766044, 403.696167, 4.409637)" tabindex="0"/>
+  <path d="M -127.13 -152.75 L -120.13 -146.75 L -134.13 -146.75 L -127.13 -152.75 Z" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);" transform="matrix(0, -1, 1, 0, 453.75, 72.889809)" tabindex="0" bx:shape="triangle -134.13 -152.75 14 6 0.5 0 1@1366ebe1"/>
+</svg>
