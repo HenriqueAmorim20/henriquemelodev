@@ -1,6 +1,5 @@
 <template>
   <div>
-    Index
     <About />
     <Skills />
     <Experience />
