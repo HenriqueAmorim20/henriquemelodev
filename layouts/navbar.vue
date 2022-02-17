@@ -60,7 +60,7 @@ export default {
     // Scroll to element on page
     scroll(to) {
       const element = document.getElementById(to);
-      const y = element?.getBoundingClientRect().top + window.pageYOffset - 60
+      const y = element?.getBoundingClientRect().top + window.pageYOffset - (this.width <= 790 ? 60 : 0)
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   },

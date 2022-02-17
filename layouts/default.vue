@@ -25,9 +25,6 @@ export default {
   methods: {
     // Method that smoothes scrolling
     revealScroll() {
-      // Navbar desktop
-
-
 
       // Headers
       ScrollReveal().reveal('.header',{
@@ -112,6 +109,15 @@ export default {
         interval: 100,
       })
 
+
+      // Projects
+      ScrollReveal().reveal('.project-card',{
+        delay: 400,
+        duration: 2000,
+        distance: "300px",
+        origin: "right",
+        interval: 100,
+      })
 
     }
   }
