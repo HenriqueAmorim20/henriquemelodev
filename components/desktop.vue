@@ -4,6 +4,18 @@
 
 <script>
 export default {
-  name: 'DesktopComponent'
+  name: 'DesktopComponent',
+  props: {
+    menu: {
+      type: Array,
+      default: null
+    }
+  },
+  methods: {
+    // call parent(navbar) function scroll
+    scroll(to) {
+      this.$emit("scroll", to)
+    }
+  }
 }
 </script>
