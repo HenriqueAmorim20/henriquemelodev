@@ -3,8 +3,9 @@
     <div style="height: 60px"></div>
     <v-app-bar
       height="60"
-      color="transparent"
+      color="#0f0e18"
       elevation="5"
+      elevate-on-scroll
       fixed
     >
       <div class="navbar">
