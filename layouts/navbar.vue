@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Mobile v-if="width <= 600" :menu="menu" @scroll="scroll"/>
-    <Desktop v-if="width > 600" :menu="menu" @scroll="scroll"/>
+    <Mobile v-if="width <= 760" :menu="menu" @scroll="scroll"/>
+    <Desktop v-if="width > 760" :menu="menu" @scroll="scroll"/>
   </div>
 </template>
 
