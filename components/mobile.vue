@@ -17,13 +17,13 @@
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             role="img"
+            width="35px"
             preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 24 24"
+            viewBox="0 0 512 512"
           >
-            <path
-              d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"
-              fill="currentColor"
-            />
+            <path fill="white" d="M80 96h352v32H80z" />
+            <path fill="white" d="M80 240h352v32H80z" />
+            <path fill="white" d="M80 384h352v32H80z" />
           </svg>
         </v-app-bar-nav-icon>
       </div>
