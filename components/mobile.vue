@@ -36,8 +36,8 @@
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
-          width="4rem"
-          height="4rem"
+          width="3.5rem"
+          height="3.5rem"
           preserveAspectRatio="xMidYMid meet"
           viewBox="0 0 50 50"
         >
@@ -51,14 +51,20 @@
           />
         </svg>
       </v-row>
-      <div
-        v-for="item in menu"
-        :key="item.name"
-        class="drawer-item"
-        @click="scroll(item.name)"
-      >
-        <span class="drawer-item-order">{{ item.order }}</span>
-        <span class="drawer-item-name">{{ item.name }}</span>
+      <div class="drawer-items">
+        <div
+          v-for="item in menu"
+          :key="item.name"
+          class="drawer-item"
+          @click="scroll(item.name)"
+        >
+          <span class="drawer-item-order">{{ item.order }}</span>
+          <span class="drawer-item-name">{{ item.name }}</span>
+        </div>
+      </div>
+      <div class="logo">
+        <img :src="require('@/static/brackets.svg')" />
+        <span>Henrique Melo</span>
       </div>
     </v-navigation-drawer>
   </div>
@@ -109,13 +115,30 @@ export default {
   padding: 15px !important;
 }
 
+.drawer-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80% !important;
+  width: 100% !important;
+}
+
 .drawer-close {
-  margin-bottom: 40px !important;
+  position: absolute;
   cursor: pointer;
+  right: 10px;
+  top: 10px;
 }
 
 .drawer-close:hover {
   color: #1094bc !important;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #1094bc;
+  margin-left: 15px !important;
 }
 
 .drawer-item {
@@ -134,11 +157,31 @@ export default {
   font-family: "tech" !important;
   color: #1094bc !important;
   margin: 0 10px 0 0 !important;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .drawer-item-name {
   font-size: 2.8rem;
   text-transform: capitalize;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 15px 10px 5px !important;
+  left: 0;
+  bottom: 10px;
+  border-top: 1px solid #ffffff2a;
+}
+
+.logo img {
+  width: 50px !important;
+  margin-right: 15px !important;
+}
+
+.logo span {
+  font-size: 1.8rem;
 }
 </style>
