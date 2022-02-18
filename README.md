@@ -1,7 +1,9 @@
 # henriquemelodev
 
-www.henriquemelodev.com.br
+
+www.henriquemelodev.com.br<br>
 https://master.d12plq5nmbzgm6.amplifyapp.com
+
 
 This website was built in VueJS using NuxtJS and Vuetify to showcase my web develpment skills and to tell a little bit of my story. 
 
