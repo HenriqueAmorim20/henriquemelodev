@@ -30,15 +30,17 @@
     <v-row class="section-down" justify="center">
       <v-col class="section-down-text" cols="6">
         <p>
-          Iniciei minha vida na programação em 2017, quando entrei na
-          Universidade de Brasília. Ao longo desse tempo desenvolvi diversas
-          competências e aprendi tecnologias poderosas como:<br />
-          - C/C++ (Algoritmos e estrutura de dados).<br />
-          - AngularJS, VueJS e NodeJS para desenvolvimento web full-stack. Bem
-          como HTML e CSS e também banco de dados SQL e noSQL(MongoDB).<br />
-          - Java, Docker, Git, AWS e outras mais também fizeram parte da minha
-          jornada de aprendizado em diversos projetos.
+          My first contact with the programming world was when I started my
+          Software Engineering Bachelor at the University of Brasilia in 2017.
+          Since 2020 I started to focus my career on web development, learning
+          new programming languages, frameworks, methodologies and so on.
         </p>
+        <div>- Experience with C/C++ in algorithms and data structures.</div>
+        <div>- VueJS, AngularJS, HTML and CSS for frontend.</div>
+        <div>- REST API in Node.js using ES6 and Express for Backend.</div >
+        <div>- Brief contact with containerization using Docker and cloud knowledge with AWS.
+        </div>
+        <div>- Java, JSF, SpringBoot and Hibernate.</div>
       </v-col>
       <v-col class="section-down-img" cols="4" align="end">
         <img :src="require('~/static/skillsbg.svg')" width="100%" />
@@ -175,17 +177,25 @@ export default {
   padding: 15px 20px !important;
 }
 
+.section-down-text {
+  margin: 0 20px 30px 10px !important;
+  padding: 0 10px !important;
+}
+
 .section-down-text p {
   font-size: 1.1rem;
   text-indent: 2rem;
-  margin-right: 20px !important;
+  margin:0 0 10px 0!important;
 }
 
-.section-down-img, .section-down-text {
+.section-down-text div {
+  margin-left: 20px !important;
+}
+
+.section-down-img,
+.section-down-text {
   min-width: 300px;
 }
-
-
 
 /* Icons */
 .git {

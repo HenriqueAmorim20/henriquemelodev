@@ -6,7 +6,12 @@
       <div class="header-divider" />
     </div>
     <v-stepper vertical max-width="1000px" class="stepper">
-      <v-stepper-step :complete="true" class="stepper-step" color="#1094bc" step="1">
+      <v-stepper-step
+        :complete="true"
+        class="stepper-step"
+        color="#1094bc"
+        step="1"
+      >
         <span class="stepper-title">Full-stack Developer</span>
         <small class="stepper-subtitle"
           >Centro de Gestão e Estudos Estratégicos - Brasília, DF</small
@@ -16,16 +21,16 @@
 
       <v-stepper-content class="stepper-content" step="1">
         <p>
-          After a solid performance on my intership i was hired as a fulltime
+          After a solid performance on my intership I was hired as a fulltime
           developer. With this promotion came a lot more responsabilities, such
-          as new projects, technologies, meetings and management in general.
-          Currently i mainly work in 3 projects, the first being a Survey/forms
-          tool developed with AngularJS, NodeJS and MongoDB; the second is a
-          large manager of events, contracts, etc. using Java, JSF, SpringBoot,
-          SQL and Hibernate; the third one is an admin service wich creates,
-          manages and plots graphics based on a large set of data developed with
-          Vuejs, NodeJS and MongoDB. I also had some contact with AWS and
-          docker.
+          as new projects, technologies, meetings and management work in
+          general. Currently I mainly work in 3 projects, the first being a
+          survey/forms tool developed with AngularJS, NodeJS and MongoDB; the
+          second is a large manager of events, contracts, etc. using Java, JSF,
+          SpringBoot, SQL and Hibernate; and finally the third one is an admin
+          service which creates, manages and plots graphics based on a large set
+          of data developed with Vuejs, NodeJS and MongoDB. I also had some
+          contact with AWS and Docker.
         </p>
         <v-row>
           <v-col class="stepper-icon" align="center">
@@ -395,7 +400,12 @@
         </v-row>
       </v-stepper-content>
 
-      <v-stepper-step :complete="true" class="stepper-step" color="#1094bc" step="1">
+      <v-stepper-step
+        :complete="true"
+        class="stepper-step"
+        color="#1094bc"
+        step="1"
+      >
         <span class="stepper-title">Full-stack Developer Intern</span>
         <small class="stepper-subtitle"
           >Centro de Gestão e Estudos Estratégicos - Brasília, DF</small
@@ -405,13 +415,12 @@
 
       <v-stepper-content class="stepper-content" step="1">
         <p>
-          Web development using AngularJS, MongoDB and NodeJS. The project was
-          related to updating an existing survey/forms system to improve
-          architecture and performance. I worked pretty much alone on this
-          project and had a lot of freedom to implement my updates and thoughts,
-          but at the same time I had to be very responsible and conscientious in
-          my decisions. With that, I developed a lot of experience in frontend,
-          backend and database.
+          In my second internship I worked in web development using AngularJS,
+          MongoDB and NodeJS. The project was related to updating an existing
+          survey/forms system to improve the software architecture and performance. I worked by myself on this project and had a lot of freedom to
+          implement my updates and thoughts, but at the same time I had to be
+          very responsible and conscientious in my decisions. With that, I
+          developed a lot of experience in frontend, backend and database.
         </p>
         <v-row>
           <v-col class="stepper-icon" align="center">
@@ -696,7 +705,12 @@
         </v-row>
       </v-stepper-content>
 
-      <v-stepper-step :complete="true" class="stepper-step" color="#1094bc" step="1">
+      <v-stepper-step
+        :complete="true"
+        class="stepper-step"
+        color="#1094bc"
+        step="1"
+      >
         <span class="stepper-title">Full-stack Developer Intern</span>
         <small class="stepper-subtitle"
           >Confia Tecnologia LTDA - Brasília, DF</small
@@ -706,7 +720,10 @@
 
       <v-stepper-content class="stepper-content" step="1">
         <p>
-          Web and mobile development using React, Firebase and NodeS. The project was related to online subscriptions and contracts, with purchases of plans and services. Our goal was to get rid of the complexity of notaries. I mainly worked with the frontend of the site.
+          In my first internship I worked in web development using React, Firebase and NodeJS. The
+          project was related to online subscriptions and contracts, with
+          purchases of plans and services. Our goal was to get rid of the
+          complexity of notary offices and I mainly worked with the frontend of the site.
         </p>
         <v-row>
           <v-col class="stepper-icon" align="center">

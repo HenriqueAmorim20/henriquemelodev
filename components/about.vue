@@ -163,7 +163,7 @@
         </div>
       </div>
       <div class="down-section-text">
-        <p>My name is Henrique Amorim Costa Melo, I'm 22 years old and I currently hold the position of Full-stack Developer at Centro de Gestão e Estudos Estratégicos (CGEE). I am creative, fast learner, always looking for the most efficient solutions in IT problems, good communication and excellent teamwork. Constantly looking for opportunities to improve my skills, knowledge and boost my career.</p>
+        <p>My name is Henrique Amorim Costa Melo, I'm 22 years old and I currently hold the position of Full-stack Developer at Centro de Gestão e Estudos Estratégicos (CGEE). I am creative, fast learner, always looking for the most efficient solutions in IT problems, good with communication, excellent with teamwork and constantly seeking for opportunities to improve my skills, knowledge and boost my career.</p>
       </div>
     </v-row>
   </div>
