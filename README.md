@@ -1,7 +1,7 @@
 # henriquemelodev
 
 
-www.henriquemelodev.com.br<br>
+www.henriquemelodev.com<br>
 https://master.d12plq5nmbzgm6.amplifyapp.com
 
 
