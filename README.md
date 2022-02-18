@@ -1,5 +1,17 @@
 # henriquemelodev
 
+
+www.henriquemelodev.com<br>
+https://master.d12plq5nmbzgm6.amplifyapp.com
+
+
+This website was built in VueJS using NuxtJS and Vuetify to showcase my web develpment skills and to tell a little bit of my story. 
+
+<img src="/static/home.png" />
+<img src="/static/error.png" />
+<img src="/static/mobile.png" />
+<img src="/static/drawer.png" />
+
 ## Build Setup
 
 ```bash
