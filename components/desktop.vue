@@ -1,8 +1,10 @@
 <template>
   <v-app-bar color="transparent" height="100px" flat>
     <div class="navbar">
-      <img :src="require('@/static/brackets.svg')" />
-      <span>Henrique Melo</span>
+      <div class="logo">
+        <img :src="require('@/static/brackets.svg')" />
+        <span>Henrique Melo</span>
+      </div>
       <span class="spacer"></span>
       <div
         v-for="item in menu"
@@ -26,6 +28,21 @@ export default {
       default: null,
     },
   },
+  mounted() {
+    ScrollReveal().reveal(".logo", {
+      delay: 0,
+      duration: 2500,
+      distance: "100px",
+      origin: "top",
+    });
+    ScrollReveal().reveal(".navbar-item", {
+      delay: 0,
+      duration: 2500,
+      distance: "100px",
+      origin: "top",
+      interval: 100
+    });
+  },
   methods: {
     // call parent(navbar) function scroll
     scroll(to) {
@@ -42,7 +59,13 @@ export default {
   align-items: center;
   padding: 0 5% !important;
 }
-.navbar img {
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
   width: 3rem;
   margin: 0 15px 0 0 !important;
 }
