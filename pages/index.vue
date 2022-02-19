@@ -22,7 +22,7 @@ export default {
     Experience,
     Projects
   },
-  created() {
+  mounted() {
     this.revealScroll()
   },
   methods: {
