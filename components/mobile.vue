@@ -12,20 +12,22 @@
         <img :src="require('@/static/brackets.svg')" />
         <span>Henrique Melo</span>
         <span class="spacer"></span>
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            role="img"
-            width="35px"
-            preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 512 512"
-          >
-            <path fill="white" d="M80 96h352v32H80z" />
-            <path fill="white" d="M80 240h352v32H80z" />
-            <path fill="white" d="M80 384h352v32H80z" />
-          </svg>
-        </v-app-bar-nav-icon>
+        <div class="navbar-icon">
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="img"
+              width="35px"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 512 512"
+            >
+              <path fill="white" d="M80 96h352v32H80z" />
+              <path fill="white" d="M80 240h352v32H80z" />
+              <path fill="white" d="M80 384h352v32H80z" />
+            </svg>
+          </v-app-bar-nav-icon>
+        </div>
       </div>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" fixed right class="drawer">
@@ -83,6 +85,26 @@ export default {
     return {
       drawer: false,
     };
+  },
+  mounted() {
+    ScrollReveal().reveal(".navbar img", {
+      delay: 0,
+      duration: 2500,
+      distance: "100px",
+      origin: "top",
+    });
+    ScrollReveal().reveal(".navbar span", {
+      delay: 100,
+      duration: 2500,
+      distance: "100px",
+      origin: "top",
+    });
+    ScrollReveal().reveal(".navbar-icon", {
+      delay: 200,
+      duration: 2500,
+      distance: "100px",
+      origin: "top",
+    });
   },
   methods: {
     // Closes drawer then call parent(navbar) function scroll
