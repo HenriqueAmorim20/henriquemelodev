@@ -173,7 +173,6 @@ export default {
   padding: 15px 10px 5px !important;
   left: 0;
   bottom: 10px;
-  border-top: 1px solid #ffffff2a;
 }
 
 .logo img {

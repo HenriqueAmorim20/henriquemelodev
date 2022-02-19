@@ -66,7 +66,7 @@ export default {
 }
 
 .logo img {
-  width: 3rem;
+  width: 3.5rem;
   margin: 0 15px 0 0 !important;
 }
 
