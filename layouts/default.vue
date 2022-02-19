@@ -43,7 +43,7 @@ export default {
 
         img1.src = "_nuxt/static/error_404.svg";
         img2.src = "_nuxt/static/skillsbg.svg";
-        img3.src = "_nuxt/static/perfil.jpeg";
+        img3.src = "_nuxt/static/perfil.jpg";
       }
     },
     addLoadEvent(func) {
