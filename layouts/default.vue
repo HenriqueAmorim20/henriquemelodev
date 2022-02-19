@@ -1,127 +1,39 @@
 <template>
   <v-app class="window">
-    <Navbar />
-    <v-main>
-      <Nuxt />
-    </v-main>
-    <Footer />
+    <div v-if="!loading">
+      <Navbar />
+      <v-main>
+        <Nuxt />
+      </v-main>
+      <Footer/>
+    </div>
+    <Loading v-if="loading" />
   </v-app>
 </template>
 
 <script>
-
-import Navbar from "~/layouts/navbar.vue"
-import Footer from "~/layouts/footer.vue"
+import Navbar from "~/layouts/navbar.vue";
+import Footer from "~/layouts/footer.vue";
+import Loading from "~/layouts/loading.vue";
 
 export default {
-  name: 'DefaultLayout',
+  name: "DefaultLayout",
   components: {
     Navbar,
-    Footer
+    Footer,
+    Loading,
+  },
+  data() {
+    return {
+      loading: true,
+    };
   },
   mounted() {
-    this.revealScroll()
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
   },
-  methods: {
-    // Method that smoothes scrolling
-    revealScroll() {
-
-      // Headers
-      ScrollReveal().reveal('.header',{
-        delay: 0,
-        duration: 2500,
-        distance: "200px",
-        origin: "left",
-      })
-
-      // About
-      ScrollReveal().reveal('.section-about-intro',{
-        delay: 0,
-        duration: 2500,
-        distance: "400px",
-        origin: "left",
-      })
-      ScrollReveal().reveal('.section-about-name',{
-        delay: 100,
-        duration: 2500,
-        distance: "400px",
-        origin: "left",
-      })
-      ScrollReveal().reveal('.section-about-role',{
-        delay: 200,
-        duration: 2500,
-        distance: "400px",
-        origin: "left",
-      })
-      ScrollReveal().reveal('.section-about-info',{
-        delay: 300,
-        duration: 2500,
-        distance: "400px",
-        origin: "left",
-      })
-      ScrollReveal().reveal('.section-media',{
-        delay: 400,
-        duration: 2500,
-        distance: "400px",
-        origin: "left",
-      })
-      ScrollReveal().reveal('.section-image',{
-        delay: 200,
-        duration: 2500,
-        distance: "400px",
-        origin: "right",
-      })
-      ScrollReveal().reveal('.down-section',{
-        delay: 400,
-        duration: 2500,
-        distance: "400px",
-        origin: "bottom",
-      })
-
-      // Skills
-      ScrollReveal().reveal('.section-skills-card',{
-        delay: 100,
-        duration: 2500,
-        distance: "200px",
-        origin: "right",
-        interval: 60,
-      })
-      ScrollReveal().reveal('.section-down',{
-        delay: 200,
-        duration: 2500,
-        distance: "400px",
-        origin: "bottom",
-      })
-
-      // Experience
-      ScrollReveal().reveal('.stepper-step',{
-        delay: 100,
-        duration: 2500,
-        distance: "400px",
-        origin: "bottom",
-        interval: 100,
-      })
-      ScrollReveal().reveal('.stepper-content',{
-        delay: 200,
-        duration: 2500,
-        distance: "400px",
-        origin: "bottom",
-        interval: 100,
-      })
-
-
-      // Projects
-      ScrollReveal().reveal('.project-card',{
-        delay: 100,
-        duration: 2500,
-        distance: "300px",
-        origin: "right",
-        interval: 150,
-      })
-
-    }
-  }
-}
+};
 </script>
 
 <style>
@@ -178,5 +90,4 @@ body {
   width: 300px;
   border-bottom: 1px solid #1094bc41;
 }
-
 </style>
