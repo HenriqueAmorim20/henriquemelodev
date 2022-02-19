@@ -5,7 +5,7 @@
       <span class="header-name">Experience</span>
       <div class="header-divider" />
     </div>
-    <v-stepper vertical max-width="1000px" class="stepper">
+    <v-stepper vertical flat max-width="1000px" class="stepper">
       <v-stepper-step
         :complete="true"
         class="stepper-step"

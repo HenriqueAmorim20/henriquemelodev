@@ -153,7 +153,7 @@
         </v-row>
         <v-row class="project-card-content" align="center">
           <v-col cols="12">
-            <span class="project-card-content-name">My page</span>
+            <span class="project-card-content-name">Henrique Melo</span>
           </v-col>
           <v-col cols="12">
             <p class="project-card-content-desc">

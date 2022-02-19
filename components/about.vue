@@ -5,17 +5,16 @@
       <span class="header-name">About me</span>
       <div class="header-divider" />
     </div>
-    <v-row class="section">
+    <v-row class="section" align="center">
       <v-col class="section-about" :cols="width > 750 ? 7 : 12">
         <v-col class="section-about-intro" cols="12">Hello, i'm</v-col>
         <v-col class="section-image" cols="12" align="center">
           <v-img
             v-if="width <= 750"
             :src="require('~/static/perfil.jpg')"
-            aspect-ratio="1"
-            height="350"
-            width="350"
-            style="border-radius: 50%"
+            width="100%"
+            max-width="350"
+            style="border-radius: 50%; aspect-ratio: 1 / 1 !important;"
           />
         </v-col>
         <v-col class="section-about-name" cols="12" align="start"
@@ -149,21 +148,31 @@
         <v-img
           v-if="width > 750"
           :src="require('~/static/perfil.jpg')"
-          aspect-ratio="1"
-          height="400"
-          width="400"
-          style="border-radius: 50%"
+          width="100%"
+          max-width="400"
+          style="border-radius: 50%; aspect-ratio: 1 / 1 !important;"
         />
       </v-col>
     </v-row>
     <v-row class="down-section">
       <div class="down-section-interests">
-        <div v-for="interest in interests" :key="interest" class="down-section-interests-item">
-          <span>{{interest}}</span>
+        <div
+          v-for="interest in interests"
+          :key="interest"
+          class="down-section-interests-item"
+        >
+          <span>{{ interest }}</span>
         </div>
       </div>
       <div class="down-section-text">
-        <p>My name is Henrique Amorim Costa Melo, I'm 22 years old and I currently hold the position of Full-stack Developer at Centro de Gestão e Estudos Estratégicos (CGEE). I am creative, fast learner, always looking for the most efficient solutions in IT problems, good with communication, excellent with teamwork and constantly seeking for opportunities to improve my skills, knowledge and boost my career.</p>
+        <p>
+          My name is Henrique Amorim Costa Melo, I'm 22 years old and I
+          currently hold the position of Full-stack Developer at Centro de
+          Gestão e Estudos Estratégicos (CGEE). I am creative, fast learner,
+          always looking for the most efficient solutions in IT problems, good
+          with communication, excellent with teamwork and constantly seeking for
+          opportunities to improve my skills, knowledge and boost my career.
+        </p>
       </div>
     </v-row>
   </div>
@@ -185,7 +194,7 @@ export default {
         "Logic",
         "Creative",
         "TeamWork",
-        "Inovation"
+        "Inovation",
       ],
     };
   },
@@ -210,7 +219,6 @@ export default {
 </script>
 
 <style scoped>
-
 .section {
   max-width: 1000px;
   margin: 0 auto !important;
@@ -276,7 +284,6 @@ export default {
   width: 40%;
   min-width: 300px;
 }
-
 
 .down-section-interests-item {
   width: fit-content;
