@@ -86,7 +86,7 @@ export default {
       drawer: false,
     };
   },
-  mounted() {
+  created() {
     ScrollReveal().reveal(".navbar img", {
       delay: 0,
       duration: 2500,

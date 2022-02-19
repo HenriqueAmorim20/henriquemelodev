@@ -28,7 +28,7 @@ export default {
       loading: true,
     };
   },
-  mounted() {
+  created() {
     this.addLoadEvent(this.preloader());
     setTimeout(() => {
       this.loading = false;

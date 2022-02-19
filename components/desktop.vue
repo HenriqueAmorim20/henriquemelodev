@@ -28,7 +28,7 @@ export default {
       default: null,
     },
   },
-  mounted() {
+  created() {
     ScrollReveal().reveal(".logo", {
       delay: 0,
       duration: 2500,
