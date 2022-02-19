@@ -11,7 +11,7 @@
         <v-col class="section-image" cols="12" align="center">
           <v-img
             v-if="width <= 750"
-            :src="require('~/static/perfil.jpg')"
+            :src="require('~/static/perfil.jpeg')"
             width="100%"
             max-width="350"
             style="border-radius: 50%; aspect-ratio: 1 / 1 !important;"
@@ -147,7 +147,7 @@
       <v-col class="section-image" cols="5" align="center">
         <v-img
           v-if="width > 750"
-          :src="require('~/static/perfil.jpg')"
+          :src="require('~/static/perfil.jpeg')"
           width="100%"
           max-width="400"
           style="border-radius: 50%; aspect-ratio: 1 / 1 !important;"
