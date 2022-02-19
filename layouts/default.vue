@@ -139,7 +139,7 @@ body {
 }
 
 .window {
-  background: #cac5ff !important;
+  background: #0f0e18 !important;
 }
 
 @font-face {
