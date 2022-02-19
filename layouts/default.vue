@@ -29,36 +29,9 @@ export default {
     };
   },
   mounted() {
-    this.addLoadEvent(this.preloader());
     setTimeout(() => {
       this.loading = false;
     }, 2000);
-  },
-  methods: {
-    preloader() {
-      if (document.images) {
-        var img1 = new Image();
-        var img2 = new Image();
-        var img3 = new Image();
-
-        img1.src = "_nuxt/static/error_404.svg";
-        img2.src = "_nuxt/static/skillsbg.svg";
-        img3.src = "_nuxt/static/perfil.jpg";
-      }
-    },
-    addLoadEvent(func) {
-      var oldonload = window.onload;
-      if (typeof window.onload != "function") {
-        window.onload = func;
-      } else {
-        window.onload = function () {
-          if (oldonload) {
-            oldonload();
-          }
-          func();
-        };
-      }
-    },
   },
 };
 </script>
