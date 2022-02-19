@@ -110,9 +110,7 @@ export default {
     // Closes drawer then call parent(navbar) function scroll
     scroll(to) {
       this.drawer = false;
-      setTimeout(() => {
-        this.$emit("scroll", to);
-      }, 800);
+      this.$emit("scroll", to);
     },
   },
 };
