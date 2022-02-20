@@ -244,7 +244,7 @@
           <v-spacer />
           <v-col class="project-card-header-icon" cols="1" align="center">
             <a
-              href="https://www.blocobsb.com.br/"
+              href="https://octi.cgee.org.br/"
               target="_blank"
               rel="noopener noreferrer"
             >
