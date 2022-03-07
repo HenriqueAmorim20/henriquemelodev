@@ -31,82 +31,82 @@ export default {
       // Headers
       ScrollReveal().reveal(".header", {
         delay: 0,
-        duration: 2500,
-        distance: "200px",
+        duration: 1500,
+        distance: "100px",
         origin: "left",
       });
 
       // About
       ScrollReveal().reveal(".section-about-intro", {
         delay: 0,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "left",
       });
       ScrollReveal().reveal(".section-about-name", {
         delay: 100,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "left",
       });
       ScrollReveal().reveal(".section-about-role", {
         delay: 200,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "left",
       });
       ScrollReveal().reveal(".section-about-info", {
         delay: 300,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "left",
       });
       ScrollReveal().reveal(".section-media", {
         delay: 400,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "left",
       });
       ScrollReveal().reveal(".section-image", {
         delay: 200,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "right",
       });
       ScrollReveal().reveal(".down-section", {
         delay: 400,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "bottom",
       });
 
       // Skills
       ScrollReveal().reveal(".section-skills-card", {
         delay: 100,
-        duration: 2500,
-        distance: "200px",
-        origin: "right",
-        interval: 60,
+        duration: 1500,
+        distance: "300px",
+        origin: "bottom",
+        interval: 50,
       });
       ScrollReveal().reveal(".section-down", {
-        delay: 200,
-        duration: 2500,
-        distance: "400px",
+        delay: 850,
+        duration: 1500,
+        distance: "150px",
         origin: "bottom",
       });
 
       // Experience
       ScrollReveal().reveal(".stepper-step", {
         delay: 100,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "bottom",
         interval: 100,
       });
       ScrollReveal().reveal(".stepper-content", {
         delay: 200,
-        duration: 2500,
-        distance: "400px",
+        duration: 1500,
+        distance: "150px",
         origin: "bottom",
         interval: 100,
       });
@@ -114,10 +114,10 @@ export default {
       // Projects
       ScrollReveal().reveal(".project-card", {
         delay: 100,
-        duration: 2500,
+        duration: 1500,
         distance: "300px",
-        origin: "right",
-        interval: 150,
+        origin: "bottom",
+        interval: 100,
       });
     },
   },
