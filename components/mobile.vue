@@ -8,11 +8,11 @@
       elevate-on-scroll
       fixed
     >
-      <div class="navbar">
+      <div class="navbar-mobile">
         <img :src="require('@/static/brackets.svg')" />
         <span>Henrique Melo</span>
         <span class="spacer"></span>
-        <div class="navbar-icon">
+        <div class="navbar-mobile-icon">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,24 +87,7 @@ export default {
     };
   },
   mounted() {
-    ScrollReveal().reveal(".navbar img", {
-      delay: 0,
-      duration: 2500,
-      distance: "100px",
-      origin: "top",
-    });
-    ScrollReveal().reveal(".navbar span", {
-      delay: 100,
-      duration: 2500,
-      distance: "100px",
-      origin: "top",
-    });
-    ScrollReveal().reveal(".navbar-icon", {
-      delay: 200,
-      duration: 2500,
-      distance: "100px",
-      origin: "top",
-    });
+    this.revealScroll()
   },
   methods: {
     // Closes drawer then call parent(navbar) function scroll
@@ -112,18 +95,41 @@ export default {
       this.drawer = false;
       this.$emit("scroll", to);
     },
+
+    // Method called to initialize scroll reveal
+    revealScroll() {
+      // Mobile
+      ScrollReveal().reveal(".navbar-mobile img", {
+        delay: 0,
+        duration: 1500,
+        distance: "50px",
+        origin: "top",
+      });
+      ScrollReveal().reveal(".navbar-mobile span", {
+        delay: 0,
+        duration: 1500,
+        distance: "50px",
+        origin: "top",
+      });
+      ScrollReveal().reveal(".navbar-mobile-icon", {
+        delay: 100,
+        duration: 1500,
+        distance: "50px",
+        origin: "top",
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
-.navbar {
+.navbar-mobile {
   width: 100% !important;
   display: flex;
   align-items: center;
   padding: 0 5% !important;
 }
-.navbar img {
+.navbar-mobile img {
   width: 3rem;
   margin: 0 15px 0 0 !important;
 }
