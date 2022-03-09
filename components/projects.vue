@@ -135,17 +135,29 @@
         <header>
           <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
           <v-spacer></v-spacer>
+          <a
+            href="https://github.com/HenriqueAmorim20/rock-paper-scissors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'github'" :width="30" />
+          </a>
+          <a
+            href="https://master.dnbikwgaty4tk.amplifyapp.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'link'" :width="30" />
+          </a>
         </header>
-        <h2>Neo</h2>
+        <h2>Rock Paper Scissors</h2>
         <p>
-          This project is a complex intern manager of events, contracts, etc.
-          It's also a private project for an outsourced company of the Ministry
-          of Technology.
+          This project is an advanced code challenge from Frontend Mentor. It's a rock-paper-scissors-spock-lizard game, which requires logic for the game rules and html/css skills to replicate the frontend of the challenge.
         </p>
         <div class="project-card-techs">
-          <span>Java</span>
-          <span>SpringBoot</span>
-          <span>SQL</span>
+          <span>VueJS</span>
+          <span>Vuetify</span>
+          <span>NuxtJS</span>
         </div>
       </v-card>
     </div>
