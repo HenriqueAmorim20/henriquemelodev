@@ -3,14 +3,14 @@
     <div style="height: 60px"></div>
     <v-app-bar height="60" flat fixed color="#0f0e18">
       <div class="navbar-desktop">
-        <img :src="require('@/static/brackets.svg')" />
-        <span>Henrique Melo</span>
+        <img :src="require('@/static/brackets.svg')"  class="load-hidden"/>
+        <span class="load-hidden">Henrique Melo</span>
         <v-spacer></v-spacer>
         <div
           v-for="item in menu"
           :key="item.name"
           @click="scroll(item.name)"
-          class="navbar-desktop-item"
+          class="navbar-desktop-item load-hidden"
         >
           <span class="navbar-desktop-item-order">{{ item.order }}</span>
           <span class="navbar-desktop-item-name">{{ item.name }}</span>

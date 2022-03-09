@@ -9,12 +9,13 @@
       fixed
     >
       <div class="navbar-mobile">
-        <img :src="require('@/static/brackets.svg')" />
-        <span>Henrique Melo</span>
+        <img :src="require('@/static/brackets.svg')" class="load-hidden" />
+        <span class="load-hidden">Henrique Melo</span>
         <span class="spacer"></span>
         <div class="navbar-mobile-icon">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer">
             <svg
+              class="load-hidden"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               role="img"
@@ -87,7 +88,7 @@ export default {
     };
   },
   mounted() {
-    this.revealScroll()
+    this.revealScroll();
   },
   methods: {
     // Closes drawer then call parent(navbar) function scroll

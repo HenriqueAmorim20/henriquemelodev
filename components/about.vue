@@ -1,14 +1,14 @@
 <template>
   <div id="about" class="main">
-    <div class="header">
+    <div class="header load-hidden">
       <span class="header-order">01.</span>
       <span class="header-name">About me</span>
       <div class="header-divider" />
     </div>
     <v-row class="section" align="center">
       <v-col class="section-about" :cols="width > 750 ? 7 : 12">
-        <v-col class="section-about-intro" cols="12">Hello, i'm</v-col>
-        <v-col class="section-image" cols="12" align="center">
+        <v-col class="section-about-intro load-hidden" cols="12">Hello, i'm</v-col>
+        <v-col class="section-image load-hidden" cols="12" align="center">
           <v-img
             v-if="width <= 750"
             :src="require('~/static/perfil.jpg')"
@@ -17,13 +17,13 @@
             style="border-radius: 50%; aspect-ratio: 1 / 1 !important;"
           />
         </v-col>
-        <v-col class="section-about-name" cols="12" align="start"
+        <v-col class="section-about-name load-hidden" cols="12" align="start"
           >Henrique Melo</v-col
         >
-        <v-col class="section-about-role" cols="12" align="start"
+        <v-col class="section-about-role load-hidden" cols="12" align="start"
           >Full stack Developer</v-col
         >
-        <v-col class="section-about-info" cols="12">
+        <v-col class="section-about-info load-hidden" cols="12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -40,7 +40,7 @@
           </svg>
           <span>hacmelo@gmail.com</span>
         </v-col>
-        <v-col class="section-about-info" cols="12">
+        <v-col class="section-about-info load-hidden" cols="12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -57,7 +57,7 @@
           </svg>
           <span>+55 (061) 98527-0234</span>
         </v-col>
-        <v-col class="section-about-info" cols="12">
+        <v-col class="section-about-info load-hidden" cols="12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -74,7 +74,7 @@
           </svg>
           <span>Brasília, Brazil.</span>
         </v-col>
-        <v-col class="section-media" cols="12" align="center">
+        <v-col class="section-media load-hidden" cols="12" align="center">
           <a
             href="https://www.linkedin.com/in/henriqueamorim20/"
             target="_blank"
@@ -144,7 +144,7 @@
           </a>
         </v-col>
       </v-col>
-      <v-col class="section-image" cols="5" align="center">
+      <v-col class="section-image load-hidden" cols="5" align="center">
         <v-img
           v-if="width > 750"
           :src="require('~/static/perfil.jpg')"
@@ -154,7 +154,7 @@
         />
       </v-col>
     </v-row>
-    <v-row class="down-section">
+    <v-row class="down-section load-hidden">
       <div class="down-section-interests">
         <div
           v-for="interest in interests"
