@@ -150,7 +150,7 @@
             <Icon :icon="'link'" :width="30" />
           </a>
         </header>
-        <h2>Spaced tourism</h2>
+        <h2>Space tourism</h2>
         <p>
           This project is an intermediate code challenge from Frontend Mentor. It's a space tourism website, which requires a lot of html/css skills to replicate the frontend of the challenge.
         </p>
