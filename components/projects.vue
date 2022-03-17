@@ -18,7 +18,7 @@
             <Icon :icon="'github'" :width="30" />
           </a>
           <a
-            href="https://master.d1je8uzer0baxp.amplifyapp.com"
+            href="https://www.loemiflores.com.br"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -131,6 +131,64 @@
           <span>MongoDB</span>
         </div>
       </v-card> -->
+      <v-card class="project-card">
+        <header>
+          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-spacer></v-spacer>
+          <a
+            href="https://github.com/HenriqueAmorim20/shortly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'github'" :width="30" />
+          </a>
+          <a
+            href="https://melohenrique-shortly.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'link'" :width="30" />
+          </a>
+        </header>
+        <h2>Shortly</h2>
+        <p>
+          This project is an intermediate code challenge from Frontend Mentor. It's a landpage of a url shortener, which requires api consuming and frontend skills.
+        </p>
+        <div class="project-card-techs">
+          <span>VueJS</span>
+          <span>Vuetify</span>
+          <span>NuxtJS</span>
+        </div>
+      </v-card>
+      <v-card class="project-card">
+        <header>
+          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-spacer></v-spacer>
+          <a
+            href="https://github.com/HenriqueAmorim20/room"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'github'" :width="30" />
+          </a>
+          <a
+            href="https://melohenrique-room.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon :icon="'link'" :width="30" />
+          </a>
+        </header>
+        <h2>Room</h2>
+        <p>
+          This project is an intermediate code challenge from Frontend Mentor. It's a homepage of a furniture company, which requires a lot frontend skills.
+        </p>
+        <div class="project-card-techs">
+          <span>VueJS</span>
+          <span>Vuetify</span>
+          <span>NuxtJS</span>
+        </div>
+      </v-card>
       <v-card class="project-card">
         <header>
           <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
