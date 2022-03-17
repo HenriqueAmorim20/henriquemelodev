@@ -14,19 +14,7 @@
         <span class="spacer"></span>
         <div class="navbar-mobile-icon">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer">
-            <svg
-              class="load-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="img"
-              width="35px"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 512 512"
-            >
-              <path fill="white" d="M80 96h352v32H80z" />
-              <path fill="white" d="M80 240h352v32H80z" />
-              <path fill="white" d="M80 384h352v32H80z" />
-            </svg>
+            <v-icon style="font-size: 2rem">mdi-menu</v-icon>
           </v-app-bar-nav-icon>
         </div>
       </div>
