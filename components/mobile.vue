@@ -12,7 +12,7 @@
         <img :src="require('@/static/brackets.svg')" class="load-hidden" />
         <span class="load-hidden">Henrique Melo</span>
         <span class="spacer"></span>
-        <div class="navbar-mobile-icon">
+        <div class="navbar-mobile-icon load-hidden">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer">
             <v-icon style="font-size: 2rem">mdi-menu</v-icon>
           </v-app-bar-nav-icon>
