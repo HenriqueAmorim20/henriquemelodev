@@ -8,7 +8,7 @@ This website was built in VueJS using NuxtJS and Vuetify to showcase my web deve
 
 <img src="./static/prints/home.png" />
 <img src="./static/prints/error.png" />
-<img src="./static/prints/mobile.png" />
+<img src="./static/prints/homemobile.png" />
 <img src="./static/prints/drawer.png" />
 
 ## Build Setup
