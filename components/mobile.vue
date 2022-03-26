@@ -9,38 +9,23 @@
       fixed
     >
       <div class="navbar-mobile">
-        <img :src="require('@/static/brackets.svg')" class="load-hidden" />
-        <span class="load-hidden">Henrique Melo</span>
+        <img
+          class="nav-logo-icon load-hidden"
+          :src="require('@/static/brackets.svg')"
+        />
+        <span class="nav-logo-text load-hidden">Henrique Melo</span>
         <span class="spacer"></span>
-        <div class="navbar-mobile-icon load-hidden">
-          <v-app-bar-nav-icon @click.stop="drawer = !drawer">
-            <v-icon style="font-size: 2rem">mdi-menu</v-icon>
-          </v-app-bar-nav-icon>
+        <div class="nav-icon load-hidden">
+          <v-icon @click.stop="drawer = !drawer">mdi-menu</v-icon>
         </div>
       </div>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" fixed right class="drawer">
       <v-row class="drawer-close">
         <v-spacer></v-spacer>
-        <svg
-          @click.stop="drawer = !drawer"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="img"
-          width="3.5rem"
-          height="3.5rem"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 50 50"
-        >
-          <path
-            fill="white"
-            d="m37.304 11.282l1.414 1.414l-26.022 26.02l-1.414-1.413z"
-          />
-          <path
-            fill="white"
-            d="m12.696 11.282l26.022 26.02l-1.414 1.415l-26.022-26.02z"
-          />
-        </svg>
+        <v-icon class="drawer-close-icon" @click.stop="drawer = !drawer">
+          mdi-close
+        </v-icon>
       </v-row>
       <div class="drawer-items">
         <div
@@ -88,20 +73,20 @@ export default {
     // Method called to initialize scroll reveal
     revealScroll() {
       // Mobile
-      ScrollReveal().reveal(".navbar-mobile img", {
+      ScrollReveal().reveal(".nav-logo-icon", {
         delay: 0,
         duration: 1500,
         distance: "50px",
         origin: "top",
       });
-      ScrollReveal().reveal(".navbar-mobile span", {
+      ScrollReveal().reveal(".nav-logo-text", {
         delay: 0,
         duration: 1500,
         distance: "50px",
         origin: "top",
       });
-      ScrollReveal().reveal(".navbar-mobile-icon", {
-        delay: 100,
+      ScrollReveal().reveal(".nav-icon", {
+        delay: 200,
         duration: 1500,
         distance: "50px",
         origin: "top",
@@ -118,9 +103,17 @@ export default {
   align-items: center;
   padding: 0 5% !important;
 }
-.navbar-mobile img {
+.nav-logo-icon {
   width: 3rem;
   margin: 0 15px 0 0 !important;
+}
+
+.nav-logo-text {
+  font-size: 1.5rem;
+}
+
+.nav-icon >>> * {
+  font-size: 2rem;
 }
 
 .drawer {
@@ -146,8 +139,8 @@ export default {
   top: 10px;
 }
 
-.drawer-close:hover {
-  color: #1094bc !important;
+.drawer-close-icon {
+  font-size: 3rem;
 }
 
 .divider {

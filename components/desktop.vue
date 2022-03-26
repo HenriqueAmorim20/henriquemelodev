@@ -4,7 +4,7 @@
     <v-app-bar height="60" flat fixed color="#0f0e18">
       <div class="navbar-desktop">
         <img :src="require('@/static/brackets.svg')"  class="load-hidden"/>
-        <span class="load-hidden">Henrique Melo</span>
+        <span class="navbar-desktop-title load-hidden">Henrique Melo</span>
         <v-spacer></v-spacer>
         <div
           v-for="item in menu"
@@ -74,8 +74,12 @@ export default {
 }
 
 .navbar-desktop img {
-  width: 3.5rem;
+  width: 3rem;
   margin: 0 15px 0 0 !important;
+}
+
+.navbar-desktop-title {
+  font-size: 1.3rem;
 }
 
 .navbar-desktop-item {

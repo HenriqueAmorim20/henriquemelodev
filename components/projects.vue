@@ -8,21 +8,21 @@
     <div class="projects">
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/loemi-flores"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://www.loemiflores.com.br"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Loemi</h2>
@@ -39,14 +39,14 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/henriquemelodev"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
         </header>
         <h2>Henrique Melo</h2>
@@ -62,21 +62,21 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/BlocoBSB-Vuejs"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://www.blocobsb.com.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Bloco</h2>
@@ -91,68 +91,30 @@
           <span>MongoDB</span>
         </div>
       </v-card>
-      <!-- <v-card class="project-card">
-        <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
-        </header>
-        <h2>iSurvey</h2>
-        <p>
-          This project is a survey/forms system, with a frontend for the user
-          and a another frontend that is a forms configurator. It's a private
-          project for an outsourced company of the Ministry of Technology.
-        </p>
-        <div class="project-card-techs">
-          <span>AngularJS</span>
-          <span>NodeJS</span>
-          <span>MongoDB</span>
-        </div>
-      </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
-          <v-spacer></v-spacer>
-          <a
-            href="https://octi.cgee.org.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon :icon="'link'" :width="30" />
-          </a>
-        </header>
-        <h2>OCTI - Admin</h2>
-        <p>
-          This project was built as an administrator system that manages,
-          stores, creates and plots graphics for the website that is linked in
-          this card.
-        </p>
-        <div class="project-card-techs">
-          <span>NuxtJS</span>
-          <span>NodeJS</span>
-          <span>MongoDB</span>
-        </div>
-      </v-card> -->
-      <v-card class="project-card">
-        <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/shortly"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://melohenrique-shortly.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Shortly</h2>
         <p>
-          This project is an intermediate code challenge from Frontend Mentor. It's a landpage of a url shortener, which requires api consuming and frontend skills.
+          This project is an intermediate code challenge from Frontend Mentor.
+          It's a landpage of a url shortener, which requires api consuming and
+          frontend skills.
         </p>
         <div class="project-card-techs">
           <span>VueJS</span>
@@ -162,26 +124,28 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/room"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://melohenrique-room.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Room</h2>
         <p>
-          This project is an intermediate code challenge from Frontend Mentor. It's a homepage of a furniture company, which requires a lot frontend skills.
+          This project is an intermediate code challenge from Frontend Mentor.
+          It's a homepage of a furniture company, which requires a lot frontend
+          skills.
         </p>
         <div class="project-card-techs">
           <span>VueJS</span>
@@ -191,26 +155,28 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/space-tourism"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://melohenrique-spacetourism.netlify.app/home"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Space tourism</h2>
         <p>
-          This project is an intermediate code challenge from Frontend Mentor. It's a space tourism website, which requires a lot of html/css skills to replicate the frontend of the challenge.
+          This project is an intermediate code challenge from Frontend Mentor.
+          It's a space tourism website, which requires a lot of html/css skills
+          to replicate the frontend of the challenge.
         </p>
         <div class="project-card-techs">
           <span>VueJS</span>
@@ -220,26 +186,29 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/countries-challenge"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://melohenrique-countrieschallenge.netlify.app/countries"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Countries</h2>
         <p>
-          This project is an advanced code challenge from Frontend Mentor. It's a website with countries information, which requires logic, API consuming and html/css skills to replicate the frontend of the challenge.
+          This project is an advanced code challenge from Frontend Mentor. It's
+          a website with countries information, which requires logic, API
+          consuming and html/css skills to replicate the frontend of the
+          challenge.
         </p>
         <div class="project-card-techs">
           <span>VueJS</span>
@@ -249,26 +218,29 @@
       </v-card>
       <v-card class="project-card">
         <header>
-          <Icon :icon="'file'" :width="50" :color="'#1094bc'" />
+          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
           <v-spacer></v-spacer>
           <a
             href="https://github.com/HenriqueAmorim20/rock-paper-scissors"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'github'" :width="30" />
+            <v-icon class="project-card-icon">mdi-github</v-icon>
           </a>
           <a
             href="https://melohenrique-rockpaperscissors.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon :icon="'link'" :width="30" />
+            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
           </a>
         </header>
         <h2>Rock Paper Scissors</h2>
         <p>
-          This project is an advanced code challenge from Frontend Mentor. It's a rock-paper-scissors-spock-lizard game, which requires logic for the game rules and html/css skills to replicate the frontend of the challenge.
+          This project is an advanced code challenge from Frontend Mentor. It's
+          a rock-paper-scissors-spock-lizard game, which requires logic for the
+          game rules and html/css skills to replicate the frontend of the
+          challenge.
         </p>
         <div class="project-card-techs">
           <span>VueJS</span>
@@ -281,13 +253,8 @@
 </template>
 
 <script>
-import Icon from "@/components/icons.vue";
-
 export default {
   name: "ProjectsComponent",
-  components: {
-    Icon,
-  },
 };
 </script>
 
@@ -326,13 +293,27 @@ export default {
   width: 100%;
 }
 
+.project-card-icon-folder {
+  font-size: 3rem;
+  margin-left: -0.3rem !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-card-icon {
+  font-size: 2rem;
+  margin-left: 0.3rem !important;
+}
+
+.project-card-icon:hover {
+  color: #1094bd !important;
+}
+
 .project-card h2 {
   font-size: 1.5rem;
   transition: 0.7s all ease;
-}
-
-.project-card:hover h2 {
-  color: #1094bd !important;
 }
 
 .project-card p {

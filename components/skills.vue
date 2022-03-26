@@ -11,10 +11,9 @@
           <v-col v-for="skill in skills" :key="skill.name" align="center">
             <v-card class="section-skills-card">
               <div class="section-skills-card-content">
-                <div
-                  class="section-skills-card-content-icon"
-                  :class="skill.icon"
-                />
+                <v-icon class="section-skills-card-content-icon">
+                  {{ skill.icon }}
+                </v-icon>
                 <span>{{ skill.name }}</span>
                 <v-progress-linear
                   class="section-skills-card-content-progress"
@@ -37,8 +36,10 @@
         </p>
         <div>- Experience with C/C++ in algorithms and data structures.</div>
         <div>- VueJS, AngularJS, HTML and CSS for frontend.</div>
-        <div>- REST API in Node.js using ES6 and Express for Backend.</div >
-        <div>- Brief contact with containerization using Docker and cloud knowledge with AWS.
+        <div>- REST API in Node.js using ES6 and Express for Backend.</div>
+        <div>
+          - Brief contact with containerization using Docker and cloud knowledge
+          with AWS.
         </div>
         <div>- Java, JSF, SpringBoot and Hibernate.</div>
       </v-col>
@@ -57,77 +58,77 @@ export default {
       skills: [
         {
           name: "Git",
-          icon: "git",
+          icon: "mdi-git",
           progress: 100,
         },
         {
           name: "HTML",
-          icon: "html",
+          icon: "mdi-language-html5",
           progress: 100,
         },
         {
           name: "CSS",
-          icon: "css",
+          icon: "mdi-language-css3",
           progress: 100,
         },
         {
           name: "JavaScript",
-          icon: "js",
+          icon: "mdi-language-javascript",
           progress: 90,
         },
         {
           name: "TypeScript",
-          icon: "ts",
+          icon: "mdi-language-typescript",
           progress: 90,
         },
         {
           name: "AngularJS",
-          icon: "ajs",
+          icon: "mdi-angular",
           progress: 80,
         },
         {
           name: "NodeJS",
-          icon: "njs",
+          icon: "mdi-nodejs",
           progress: 80,
         },
         {
           name: "VueJS",
-          icon: "vjs",
+          icon: "mdi-vuejs",
           progress: 80,
         },
         {
           name: "C/C++",
-          icon: "c",
+          icon: "mdi-language-cpp",
           progress: 60,
         },
         {
           name: "Java",
-          icon: "java",
+          icon: "mdi-language-java",
           progress: 60,
         },
         {
           name: "MongoDB",
-          icon: "mongo",
+          icon: "mdi-database",
           progress: 60,
         },
         {
           name: "SQL",
-          icon: "sql",
+          icon: "mdi-database",
           progress: 50,
         },
         {
           name: "ReactJS",
-          icon: "rjs",
+          icon: "mdi-react",
           progress: 40,
         },
         {
           name: "Docker",
-          icon: "docker",
+          icon: "mdi-docker",
           progress: 30,
         },
         {
           name: "AWS",
-          icon: "aws",
+          icon: "mdi-aws",
           progress: 30,
         },
       ],
@@ -153,8 +154,8 @@ export default {
 }
 
 .section-skills-card-content-icon {
-  width: 25px;
-  margin-right: 10px !important;
+  margin-right: 0.5rem !important;
+  color: #1094bd !important;
 }
 
 .section-skills-card-content span {
@@ -185,7 +186,7 @@ export default {
 .section-down-text p {
   font-size: 1.1rem;
   text-indent: 2rem;
-  margin:0 0 10px 0!important;
+  margin: 0 0 10px 0 !important;
 }
 
 .section-down-text div {
@@ -195,66 +196,5 @@ export default {
 .section-down-img,
 .section-down-text {
   min-width: 300px;
-}
-
-/* Icons */
-.git {
-  content: url("https://api.iconify.design/bi/git.svg?color=%231094bc");
-}
-
-.html {
-  content: url("https://api.iconify.design/akar-icons/html-fill.svg?color=%231094bc");
-}
-
-.css {
-  content: url("https://api.iconify.design/akar-icons/css-fill.svg?color=%231094bc");
-}
-
-.java {
-  content: url("https://api.iconify.design/bxl/java.svg?color=%231094bc");
-}
-
-.js {
-  content: url("https://api.iconify.design/akar-icons/javascript-fill.svg?color=%231094bc");
-}
-
-.ts {
-  content: url("https://api.iconify.design/simple-icons/typescript.svg?color=%231094bc");
-}
-
-.ajs {
-  content: url("https://api.iconify.design/akar-icons/angular-fill.svg?color=%231094bc");
-}
-
-.njs {
-  content: url("https://api.iconify.design/la/node.svg?color=%231094bc");
-}
-
-.c {
-  content: url("https://api.iconify.design/file-icons/c.svg?color=%231094bc");
-}
-
-.vjs {
-  content: url("https://api.iconify.design/akar-icons/vue-fill.svg?color=%231094bc");
-}
-
-.mongo {
-  content: url("https://api.iconify.design/eos-icons/database.svg?color=%231094bc");
-}
-
-.sql {
-  content: url("https://api.iconify.design/eos-icons/database.svg?color=%231094bc");
-}
-
-.rjs {
-  content: url("https://api.iconify.design/akar-icons/react-fill.svg?color=%231094bc");
-}
-
-.docker {
-  content: url("https://api.iconify.design/bx/bxl-docker.svg?color=%231094bc");
-}
-
-.aws {
-  content: url("https://api.iconify.design/bx/bxl-aws.svg?color=%231094bc");
 }
 </style>
