@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <!-- Titulo da secao -->
-    <header class="header">
+    <header class="header load-hidden">
       <span class="header-order">01.</span>
       <span class="header-name">About me</span>
       <span class="header-divider" />

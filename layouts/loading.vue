@@ -2,7 +2,7 @@
   <div class="full">
     <div class="Loader"></div>
     <div class="logo">
-      <img :src="require('@/static/brackets.svg')" />
+      <img src="/brackets.svg" />
       <span>Henrique Melo</span>
     </div>
   </div>
