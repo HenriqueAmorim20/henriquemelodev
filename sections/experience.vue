@@ -29,13 +29,13 @@
             {{ item.description }}
           </p>
           <div class="experience-content-icons">
-            <v-icon
+            <span
               v-for="(icon, index) in item.icons"
               :key="index"
               class="experience-content-icons-item"
+              :class="icon"
             >
-              {{ icon }}
-            </v-icon>
+            </span>
           </div>
         </v-stepper-content>
       </div>
@@ -56,12 +56,12 @@ export default {
           description:
             "After a solid performance on my intership I was hired as a fulltime developer. With this promotion came a lot more responsabilities, such as new projects, technologies, meetings and management work in general. Currently I mainly work in 3 projects, the first being a survey/forms tool developed with AngularJS, NodeJS and MongoDB; the second is a large manager of events, contracts, etc. using Java, JSF, SpringBoot, SQL and Hibernate; and finally the third one is an admin service which creates, manages and plots graphics based on a large set of data developed with Vuejs, NodeJS and MongoDB. I also had some contact with AWS and Docker.",
           icons: [
-            "mdi-angular",
-            "mdi-nodejs",
-            "mdi-database",
-            "mdi-vuejs",
-            "mdi-language-java",
-            "mdi-aws",
+            "angular",
+            "nodejs",
+            "mongodb",
+            "vuejs",
+            "java",
+            "aws",
           ],
         },
         {
@@ -70,7 +70,7 @@ export default {
           duration: "January 2021 - September 2021",
           description:
             "In my second internship I worked in web development using AngularJS, MongoDB and NodeJS. The project was related to updating an existing survey/forms system to improve the software architecture and performance. I worked by myself on this project and had a lot of freedom to implement my updates and thoughts, but at the same time I had to be very responsible and conscientious in my decisions. With that, I developed a lot of experience in frontend, backend and database.",
-          icons: ["mdi-angular", "mdi-nodejs", "mdi-database"],
+          icons: ["angular", "nodejs", "mongodb"],
         },
         {
           role: "Full-stack Developer intern",
@@ -78,7 +78,7 @@ export default {
           duration: "October 2020 - January 2021",
           description:
             "In my first internship I worked in web development using React, Firebase and NodeJS. The project was related to online subscriptions and contracts, with purchases of plans and services. Our goal was to get rid of the complexity of notary offices and I mainly worked with the frontend of the site.",
-          icons: ["mdi-react", "mdi-nodejs", "mdi-firebase"],
+          icons: ["react", "nodejs", "firebase"],
         },
       ],
     };
@@ -140,12 +140,47 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .experience-content-icons-item {
-  font-size: 3rem;
+  width: 2.5rem;
+  margin: 1rem;
   color: #1094bc;
 }
 /* Fim experiencia */
+
+/* Inicio dos icones */
+.angular {
+  content: url("https://api.iconify.design/vscode-icons/file-type-angular.svg");
+}
+
+.nodejs {
+  content: url("https://api.iconify.design/logos/nodejs-icon.svg");
+}
+
+.mongodb {
+  content: url("https://api.iconify.design/vscode-icons/folder-type-mongodb.svg");
+}
+
+.vuejs {
+  content: url("https://api.iconify.design/vscode-icons/file-type-vue.svg");
+}
+
+.java {
+  content: url("https://api.iconify.design/logos/java.svg");
+}
+
+.aws {
+  content: url("https://api.iconify.design/logos/aws.svg");
+}
+
+.react {
+  content: url("https://api.iconify.design/vscode-icons/file-type-reactjs.svg");
+}
+
+.firebase {
+  content: url("https://api.iconify.design/vscode-icons/file-type-firebase.svg");
+}
+/* Fim dos icones */
 </style>
