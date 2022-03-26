@@ -66,31 +66,4 @@ body {
   font-family: "tech";
   src: url("~/assets/ShareTechMono-Regular.ttf") format("truetype");
 }
-
-.main {
-  max-width: 1100px;
-  margin: 0 auto 100px !important;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  padding: 10px 10px 0 !important;
-}
-.header-name {
-  min-width: 210px;
-  font-size: 2rem !important;
-  padding: 15px 25px !important;
-}
-
-.header-order {
-  font-size: 1.3rem;
-  font-family: "tech" !important;
-  color: #1094bc !important;
-}
-
-.header-divider {
-  width: 300px;
-  border-bottom: 1px solid #1094bc41;
-}
 </style>

@@ -36,45 +36,45 @@ export default {
       });
 
       // About
-      ScrollReveal().reveal(".section-about-intro", {
+      ScrollReveal().reveal(".upper-section-info-intro", {
         delay: 0,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "left",
       });
-      ScrollReveal().reveal(".section-about-name", {
+      ScrollReveal().reveal(".upper-section-info-name", {
         delay: 100,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "left",
       });
-      ScrollReveal().reveal(".section-about-role", {
+      ScrollReveal().reveal(".upper-section-info-role", {
         delay: 200,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "left",
       });
-      ScrollReveal().reveal(".section-about-info", {
+      ScrollReveal().reveal(".upper-section-info-details", {
         delay: 300,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "left",
       });
-      ScrollReveal().reveal(".section-media", {
+      ScrollReveal().reveal(".upper-section-info-media", {
         delay: 400,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "left",
       });
-      ScrollReveal().reveal(".section-image", {
+      ScrollReveal().reveal(".upper-section-img", {
         delay: 200,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "right",
       });
       ScrollReveal().reveal(".bottom-section", {
         delay: 400,
-        duration: 1500,
+        duration: 2000,
         distance: "50px",
         origin: "bottom",
       });
