@@ -1,36 +1,36 @@
 <template>
-  <v-footer class="footer">
-    <v-row>
-      <v-col cols="6" align="center" class="footer-text">
-        <span>
-          All rights reserved Henrique Melo &copy;
-          {{ new Date().getFullYear() }}
-        </span>
-      </v-col>
-      <v-col cols="6" align="start" class="footer-media">
-        <a
-          href="https://www.linkedin.com/in/henriqueamorim20/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <v-icon class="footer-media-icon">mdi-linkedin</v-icon>
-        </a>
-        <a
-          href="https://github.com/HenriqueAmorim20"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <v-icon class="footer-media-icon">mdi-github</v-icon>
-        </a>
-        <a
-          href="https://www.instagram.com/henriqueamorimcm/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <v-icon class="footer-media-icon">mdi-instagram</v-icon>
-        </a>
-      </v-col>
-    </v-row>
+  <!-- Footer -->
+  <v-footer class="footer" color="#0f0e18">
+    <!-- Copyright data atual -->
+    <span class="footer-text">
+      All rights reserved Henrique Melo &copy;
+      {{ new Date().getFullYear() }}
+    </span>
+
+    <!-- Icones de medias sociais -->
+    <div class="footer-media">
+      <a
+        href="https://www.linkedin.com/in/henriqueamorim20/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <v-icon class="footer-media-icon">mdi-linkedin</v-icon>
+      </a>
+      <a
+        href="https://github.com/HenriqueAmorim20"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <v-icon class="footer-media-icon">mdi-github</v-icon>
+      </a>
+      <a
+        href="https://www.instagram.com/henriqueamorimcm/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <v-icon class="footer-media-icon">mdi-instagram</v-icon>
+      </a>
+    </div>
   </v-footer>
 </template>
 
@@ -41,35 +41,41 @@ export default {
 </script>
 
 <style scoped>
+/* Inicio footer */
 .footer {
-  background-color: transparent !important;
-  padding: 30px 0px !important;
-}
-
-.footer-media,
-.footer-text {
-  padding: 15px 5px !important;
-}
-
-.footer-media {
-  min-width: 160px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 3.5rem;
 }
 
 .footer-text {
-  min-width: 320px;
+  width: 50%;
+  text-align: center;
 }
 
 .footer-media a {
   text-decoration: none;
+  margin: 0 0.7rem;
 }
 
 .footer-media-icon {
-  font-size: 1.2rem;
-  margin: 0 0.5rem !important;
-  transition: 0.5s all ease;
+  font-size: 1.1rem;
 }
 
 .footer-media-icon:hover {
-  color: #1094bc !important;
+  color: #1094bc;
 }
+/* Fim footer */
+
+/* Inicio media query mobile */
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-text {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+/* Fim media query mobile */
 </style>
