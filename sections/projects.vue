@@ -1,274 +1,210 @@
 <template>
-  <div id="projects" class="main">
-    <div class="header">
+  <div id="projects">
+    <!-- Titulo da secao -->
+    <header class="header">
       <span class="header-order">04.</span>
       <span class="header-name">Projects</span>
-      <div class="header-divider" />
-    </div>
+      <span class="header-divider" />
+    </header>
+
     <div class="projects">
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
+      <!-- Card do projeto -->
+      <v-card
+        v-for="(item, index) in projects"
+        :key="index"
+        class="project-card"
+        flat
+      >
+        <!-- Header do card projeto -->
+        <header class="project-card-header">
+          <v-icon class="project-card-header-folder" color="blue">
+            mdi-folder
+          </v-icon>
           <v-spacer></v-spacer>
+          <!-- Links do projeto -->
           <a
-            href="https://github.com/HenriqueAmorim20/loemi-flores"
+            v-if="item.github"
+            :href="item.github"
             target="_blank"
             rel="noopener noreferrer"
+            class="project-card-header-link"
           >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
+            <v-icon class="project-card-header-link-icon">mdi-github</v-icon>
           </a>
           <a
-            href="https://www.loemiflores.com.br"
+            v-if="item.link"
+            :href="item.link"
             target="_blank"
             rel="noopener noreferrer"
+            class="project-card-header-link"
           >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
+            <v-icon class="project-card-header-link-icon">
+              mdi-link-variant
+            </v-icon>
           </a>
         </header>
-        <h2>Loemi</h2>
-        <p>
-          This website was built as a Floral Design portfolio for a florist in
-          Brasilia. The idea of this project is to show the products in a
-          minalistic yet beautiful way.
-        </p>
+
+        <!-- Conteudo do projeto -->
+        <h2 class="project-card-name">{{ item.name }}</h2>
+        <p class="project-card-description">{{ item.description }}</p>
+
+        <!-- Tecnologias do projeto -->
         <div class="project-card-techs">
-          <span>NuxtJS</span>
-          <span>VueJS</span>
-          <span>Vuetify</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/henriquemelodev"
-            target="_blank"
-            rel="noopener noreferrer"
+          <span
+            v-for="(tech, i) in item.techs"
+            :key="i"
+            class="project-card-techs-item"
           >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-        </header>
-        <h2>Henrique Melo</h2>
-        <p>
-          This website was built to showcase my web develpment skills and to
-          tell a little bit of my story.
-        </p>
-        <div class="project-card-techs">
-          <span>NuxtJS</span>
-          <span>VueJS</span>
-          <span>Vuetify</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/BlocoBSB-Vuejs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://www.blocobsb.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Bloco</h2>
-        <p>
-          This website was built for a local shirt brand from Brasília. The idea
-          of this project is to help clients visualize the products and make the
-          purchase easier.
-        </p>
-        <div class="project-card-techs">
-          <span>NuxtJS</span>
-          <span>NodeJS</span>
-          <span>MongoDB</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/shortly"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://melohenrique-shortly.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Shortly</h2>
-        <p>
-          This project is an intermediate code challenge from Frontend Mentor.
-          It's a landpage of a url shortener, which requires api consuming and
-          frontend skills.
-        </p>
-        <div class="project-card-techs">
-          <span>VueJS</span>
-          <span>Vuetify</span>
-          <span>NuxtJS</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/room"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://melohenrique-room.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Room</h2>
-        <p>
-          This project is an intermediate code challenge from Frontend Mentor.
-          It's a homepage of a furniture company, which requires a lot frontend
-          skills.
-        </p>
-        <div class="project-card-techs">
-          <span>VueJS</span>
-          <span>Vuetify</span>
-          <span>NuxtJS</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/space-tourism"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://melohenrique-spacetourism.netlify.app/home"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Space tourism</h2>
-        <p>
-          This project is an intermediate code challenge from Frontend Mentor.
-          It's a space tourism website, which requires a lot of html/css skills
-          to replicate the frontend of the challenge.
-        </p>
-        <div class="project-card-techs">
-          <span>VueJS</span>
-          <span>Vuetify</span>
-          <span>NuxtJS</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/countries-challenge"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://melohenrique-countrieschallenge.netlify.app/countries"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Countries</h2>
-        <p>
-          This project is an advanced code challenge from Frontend Mentor. It's
-          a website with countries information, which requires logic, API
-          consuming and html/css skills to replicate the frontend of the
-          challenge.
-        </p>
-        <div class="project-card-techs">
-          <span>VueJS</span>
-          <span>Vuetify</span>
-          <span>NuxtJS</span>
-        </div>
-      </v-card>
-      <v-card class="project-card">
-        <header>
-          <v-icon class="project-card-icon-folder" color="blue">mdi-folder</v-icon>
-          <v-spacer></v-spacer>
-          <a
-            href="https://github.com/HenriqueAmorim20/rock-paper-scissors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-github</v-icon>
-          </a>
-          <a
-            href="https://melohenrique-rockpaperscissors.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <v-icon class="project-card-icon">mdi-link-variant</v-icon>
-          </a>
-        </header>
-        <h2>Rock Paper Scissors</h2>
-        <p>
-          This project is an advanced code challenge from Frontend Mentor. It's
-          a rock-paper-scissors-spock-lizard game, which requires logic for the
-          game rules and html/css skills to replicate the frontend of the
-          challenge.
-        </p>
-        <div class="project-card-techs">
-          <span>VueJS</span>
-          <span>Vuetify</span>
-          <span>NuxtJS</span>
+            {{ tech }}
+          </span>
         </div>
       </v-card>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
 export default {
   name: "ProjectsComponent",
+  data() {
+    return {
+      projects: [
+        {
+          name: "loemi",
+          description:
+            "This website was built as a Floral Design portfolio for a florist in Brasilia. The idea of this project is to show the products in a minalistic yet beautiful way.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/loemi-flores",
+          link: "www.loemiflores.com.br",
+        },
+        {
+          name: "henrique melo",
+          description:
+            "This website was built to showcase my web develpment skills and to tell a little bit of my story.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/henriquemelodev",
+          link: null,
+        },
+        {
+          name: "bloco",
+          description:
+            "This website was built for a local shirt brand from Brasília. The idea of this project is to help clients visualize the products and make the purchase easier.",
+          techs: ["NuxtJS", "NodeJS", "MongoDB"],
+          github: "https://github.com/HenriqueAmorim20/BlocoBSB-Vuejs",
+          link: "https://www.blocobsb.com.br/",
+        },
+        {
+          name: "shortly",
+          description:
+            "This project is an intermediate code challenge from Frontend Mentor. It's a landpage of a url shortener, which requires api consuming and frontend skills.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/shortly",
+          link: "https://melohenrique-shortly.netlify.app/",
+        },
+        {
+          name: "room",
+          description:
+            "This project is an intermediate code challenge from Frontend Mentor. It's a homepage of a furniture company, which requires a lot frontend skills.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/room",
+          link: "https://melohenrique-room.netlify.app/",
+        },
+        {
+          name: "space tourism",
+          description:
+            "This project is an intermediate code challenge from Frontend Mentor. It's a space tourism website, which requires a lot of html/css skills to replicate the frontend of the challenge.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/space-tourism",
+          link: "https://melohenrique-spacetourism.netlify.app/home",
+        },
+        {
+          name: "countries",
+          description:
+            "This project is an advanced code challenge from Frontend Mentor. It's a website with countries information, which requires logic, API consuming and html/css skills to replicate the frontend of the challenge.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/countries-challenge",
+          link: "https://melohenrique-countrieschallenge.netlify.app/countries",
+        },
+        {
+          name: "rock paper scissors",
+          description:
+            "This project is an advanced code challenge from Frontend Mentor. It's a rock-paper-scissors-spock-lizard game, which requires logic for the game rules and html/css skills to replicate the frontend of the challenge.",
+          techs: ["NuxtJS", "VueJS", "Vuetify"],
+          github: "https://github.com/HenriqueAmorim20/rock-paper-scissors",
+          link: "https://melohenrique-rockpaperscissors.netlify.app/",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
+/* Inicio secao projects */
 .projects {
-  max-width: 1100px;
-  padding: 20px 20px !important;
-  margin: 0 auto !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-top: 3rem;
+}
+/* Fim secao projects */
+
+/* Inicio card do projeto */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a192b;
+  padding: 0.5rem 0.8rem;
 }
 
-@media (max-width: 1025px) {
+.project-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-card-header-folder {
+  font-size: 3rem;
+  margin-left: -0.3rem;
+}
+
+.project-card-header-link {
+  text-decoration: none;
+}
+
+.project-card-header-link-icon {
+  font-size: 1.8rem;
+  margin-left: 0.3rem;
+}
+
+.project-card-header-link-icon:hover {
+  color: #1094bd;
+}
+
+.project-card-name {
+  text-transform: capitalize;
+}
+
+.project-card-description {
+  color: #bebebe;
+  margin: 1rem 0;
+}
+
+.project-card-techs {
+  margin-top: auto;
+}
+
+.project-card-techs-item {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #1094bc;
+  border: 1px solid #1094bc;
+  padding: 0.1rem 0.5rem;
+  margin: 0 1rem 0 0;
+}
+/* Fim card do projeto */
+
+/* Inicio media queries */
+@media (max-width: 1000px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -279,58 +215,5 @@ export default {
     grid-template-columns: 1fr;
   }
 }
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  padding: 10px !important;
-  background-color: #1a192b;
-}
-
-.project-card header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.project-card-icon-folder {
-  font-size: 3rem;
-  margin-left: -0.3rem !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-.project-card-icon {
-  font-size: 2rem;
-  margin-left: 0.3rem !important;
-}
-
-.project-card-icon:hover {
-  color: #1094bd !important;
-}
-
-.project-card h2 {
-  font-size: 1.5rem;
-  transition: 0.7s all ease;
-}
-
-.project-card p {
-  font-size: 1rem;
-  margin: 10px auto auto !important;
-  color: #bebebe !important;
-}
-
-.project-card-techs {
-  margin-top: 20px !important;
-}
-
-.project-card-techs span {
-  font-size: 0.8rem;
-  color: #1094bc !important;
-  border: 1px solid #1094bc;
-  padding: 1px 10px !important;
-  margin: 0 20px 0 0 !important;
-}
+/* Fim media queries */
 </style>

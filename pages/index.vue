@@ -25,7 +25,7 @@ export default {
     this.revealScroll();
   },
   methods: {
-    // Method that smoothes scrolling
+    // Method that reveals the elements
     revealScroll() {
       // Headers
       ScrollReveal().reveal(".header", {
@@ -111,9 +111,9 @@ export default {
 
       // Projects
       ScrollReveal().reveal(".project-card", {
-        delay: 100,
+        delay: 0,
         duration: 1500,
-        distance: "300px",
+        distance: "200px",
         origin: "bottom",
         interval: 100,
       });
@@ -138,6 +138,7 @@ export default {
   padding: 1rem 1rem 0 0;
   margin-top: 5rem;
 }
+
 .header-name {
   min-width: max-content;
   font-size: 1.8rem;
