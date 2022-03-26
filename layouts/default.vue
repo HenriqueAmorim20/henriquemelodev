@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      loading: true,
+      loading: false,
     };
   },
   mounted() {
@@ -40,10 +40,9 @@ export default {
 /* Global styles */
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-family: "custom" !important;
-  color: #fff !important;
+  margin: 0;
+  padding: 0;
+  font-family: "custom";
 }
 
 html.sr .load-hidden {
