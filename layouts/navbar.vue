@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!-- Navbar -->
     <v-app-bar class="navbar" height="65" flat fixed color="#0f0e18">
       <!-- Logo do site -->

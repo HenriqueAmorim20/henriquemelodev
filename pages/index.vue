@@ -95,19 +95,18 @@ export default {
       });
 
       // Experience
-      ScrollReveal().reveal(".stepper-step", {
-        delay: 100,
-        duration: 1500,
+      ScrollReveal().reveal(".experience", {
+        delay: 0,
+        duration: 2000,
         distance: "150px",
         origin: "bottom",
         interval: 100,
       });
-      ScrollReveal().reveal(".stepper-content", {
-        delay: 200,
-        duration: 1500,
+      ScrollReveal().reveal(".experience-content", {
+        delay: 100,
+        duration: 2000,
         distance: "150px",
         origin: "bottom",
-        interval: 100,
       });
 
       // Projects
