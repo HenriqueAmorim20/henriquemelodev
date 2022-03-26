@@ -13,6 +13,7 @@
         v-for="(item, index) in skills"
         :key="index"
         class="section-skills-card"
+        color="transparent"
         flat
         tile
       >

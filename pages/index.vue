@@ -81,16 +81,16 @@ export default {
 
       // Skills
       ScrollReveal().reveal(".section-skills-card", {
-        delay: 100,
-        duration: 1500,
-        distance: "300px",
+        delay: 0,
+        duration: 2000,
+        distance: "50px",
         origin: "bottom",
         interval: 50,
       });
-      ScrollReveal().reveal(".section-down", {
+      ScrollReveal().reveal(".section-info", {
         delay: 850,
-        duration: 1500,
-        distance: "150px",
+        duration: 2000,
+        distance: "50px",
         origin: "bottom",
       });
 
