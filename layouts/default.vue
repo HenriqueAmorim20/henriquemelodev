@@ -25,13 +25,13 @@ export default {
   },
   data() {
     return {
-      loading: false,
+      loading: true,
     };
   },
   mounted() {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, 1500);
   },
 };
 </script>

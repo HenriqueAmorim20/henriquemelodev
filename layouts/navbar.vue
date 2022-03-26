@@ -3,7 +3,7 @@
     <!-- Navbar -->
     <v-app-bar class="navbar" height="65" flat fixed color="#0f0e18">
       <!-- Logo do site -->
-      <div class="navbar-logo load-hidden">
+      <div class="navbar-logo load-hidden" @click="goTop()">
         <img src="/brackets.svg" class="navbar-logo-img" />
         <span class="navbar-logo-label">Henrique Melo</span>
       </div>
@@ -89,6 +89,13 @@ export default {
     this.revealScroll();
   },
   methods: {
+
+    // Goes to the top of home page
+    goTop() {
+      this.$router.push("/")
+      this.scroll('about')
+    },
+
     // Scroll to element on page
     scroll(to) {
       const element = document.getElementById(to);
@@ -139,6 +146,7 @@ export default {
 .navbar-logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar-logo-img {

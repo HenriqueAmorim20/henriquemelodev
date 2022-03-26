@@ -50,6 +50,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   height: 60vh;
-  width: 100% !important;
+  margin-top: 5rem;
+  padding: 2rem;
 }
 </style>
