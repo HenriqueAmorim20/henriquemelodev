@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!-- Div para compensar tamanho da navbar fixa -->
-    <div style="height: 65px"></div>
 
     <!-- Navbar -->
     <v-app-bar class="navbar" height="65" flat fixed color="#0f0e18">

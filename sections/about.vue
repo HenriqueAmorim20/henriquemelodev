@@ -87,7 +87,7 @@
 </template>
 <script>
 export default {
-  name: "RefactorSection",
+  name: "AboutSection",
   data() {
     return {
       interests: [

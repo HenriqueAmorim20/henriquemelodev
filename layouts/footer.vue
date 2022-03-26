@@ -45,7 +45,7 @@ export default {
 .footer {
   display: flex;
   align-items: center;
-  padding: 0 1rem 3.5rem;
+  padding: 3rem 1rem ;
 }
 
 .footer-text {

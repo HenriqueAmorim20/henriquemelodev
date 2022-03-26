@@ -137,6 +137,7 @@ export default {
   display: flex;
   align-items: center;
   padding: 1rem 1rem 0 0;
+  margin-top: 5rem;
 }
 .header-name {
   min-width: max-content;
