@@ -96,7 +96,7 @@ export default {
 
 /* Inicio experiencia */
 .experience {
-  padding: 0;
+  padding-left: 0 !important;
 }
 
 .experience-role {
