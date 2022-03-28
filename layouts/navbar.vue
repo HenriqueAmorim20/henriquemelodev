@@ -240,7 +240,7 @@ export default {
 /* Fim drawer mobile */
 
 /* Inicio media query para desktop */
-@media (min-width: 750px) {
+@media (min-width: 770px) {
   .navbar-mobile-icon {
     display: none !important;
   }
@@ -248,7 +248,7 @@ export default {
 /* Fim media query para desktop */
 
 /* Inicio media query para mobile */
-@media (max-width: 751px) {
+@media (max-width: 771px) {
   .navbar-menu {
     display: none !important;
   }
