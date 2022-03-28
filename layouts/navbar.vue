@@ -242,7 +242,7 @@ export default {
 /* Inicio media query para desktop */
 @media (min-width: 750px) {
   .navbar-mobile-icon {
-    display: none;
+    display: none !important;
   }
 }
 /* Fim media query para desktop */
@@ -250,7 +250,7 @@ export default {
 /* Inicio media query para mobile */
 @media (max-width: 751px) {
   .navbar-menu {
-    display: none;
+    display: none !important;
   }
 }
 /* Fim media query para mobile */
