@@ -88,7 +88,7 @@ export default {
 <style scoped>
 /* Inicio stepper experiencias */
 .experiences {
-  background-color: transparent;
+  background-color: transparent !important;
   margin: 3rem 0 0;
   padding: 0;
 }
