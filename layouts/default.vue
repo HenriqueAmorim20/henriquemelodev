@@ -31,7 +31,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, 1500);
   },
 };
 </script>
@@ -40,10 +40,9 @@ export default {
 /* Global styles */
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-family: "custom" !important;
-  color: #fff !important;
+  margin: 0;
+  padding: 0;
+  font-family: "custom";
 }
 
 html.sr .load-hidden {
@@ -66,32 +65,5 @@ body {
 @font-face {
   font-family: "tech";
   src: url("~/assets/ShareTechMono-Regular.ttf") format("truetype");
-}
-
-.main {
-  max-width: 1100px;
-  margin: 0 auto 100px !important;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  padding: 10px 10px 0 !important;
-}
-.header-name {
-  min-width: 210px;
-  font-size: 2rem !important;
-  padding: 15px 25px !important;
-}
-
-.header-order {
-  font-size: 1.3rem;
-  font-family: "tech" !important;
-  color: #1094bc !important;
-}
-
-.header-divider {
-  width: 300px;
-  border-bottom: 1px solid #1094bc41;
 }
 </style>
