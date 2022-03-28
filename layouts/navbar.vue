@@ -244,6 +244,9 @@ export default {
   .navbar-mobile-icon {
     display: none !important;
   }
+  .navbar-menu {
+    display: flex !important;
+  }
 }
 /* Fim media query para desktop */
 
@@ -251,6 +254,9 @@ export default {
 @media (max-width: 771px) {
   .navbar-menu {
     display: none !important;
+  }
+  .navbar-mobile-icon {
+    display: flex !important;
   }
 }
 /* Fim media query para mobile */
