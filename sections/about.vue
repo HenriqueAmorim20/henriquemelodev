@@ -10,7 +10,7 @@
     <!-- Secao superior -->
     <section class="upper-section">
       <div class="upper-section-info">
-        <p class="upper-section-info-intro load-hidden"> Hello, i'm </p>
+        <p class="upper-section-info-intro load-hidden">Hello, i'm</p>
         <img class="upper-section-img mobile load-hidden" src="/perfil.jpg" />
         <h1 class="upper-section-info-name load-hidden">Henrique Melo</h1>
         <h2 class="upper-section-info-role load-hidden">Fullstack developer</h2>

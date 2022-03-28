@@ -22,10 +22,7 @@
       </div>
       <!-- Icone para mobile -->
       <div class="navbar-mobile load-hidden">
-        <v-icon
-          class="navbar-mobile-icon"
-          @click.stop="drawer = !drawer"
-        >
+        <v-icon class="navbar-mobile-icon" @click.stop="drawer = !drawer">
           mdi-menu
         </v-icon>
       </div>
@@ -89,11 +86,10 @@ export default {
     this.revealScroll();
   },
   methods: {
-
     // Goes to the top of home page
     goTop() {
-      this.$router.push("/")
-      this.scroll('about')
+      this.$router.push("/");
+      this.scroll("about");
     },
 
     // Scroll to element on page

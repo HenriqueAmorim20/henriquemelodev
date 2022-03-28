@@ -38,7 +38,6 @@ export default {
 
 <style>
 /* Global styles */
-
 * {
   margin: 0;
   padding: 0;

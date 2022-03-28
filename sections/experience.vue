@@ -55,14 +55,7 @@ export default {
           duration: "September 2021 - present",
           description:
             "After a solid performance on my intership I was hired as a fulltime developer. With this promotion came a lot more responsabilities, such as new projects, technologies, meetings and management work in general. Currently I mainly work in 3 projects, the first being a survey/forms tool developed with AngularJS, NodeJS and MongoDB; the second is a large manager of events, contracts, etc. using Java, JSF, SpringBoot, SQL and Hibernate; and finally the third one is an admin service which creates, manages and plots graphics based on a large set of data developed with Vuejs, NodeJS and MongoDB. I also had some contact with AWS and Docker.",
-          icons: [
-            "angular",
-            "nodejs",
-            "mongodb",
-            "vuejs",
-            "java",
-            "aws",
-          ],
+          icons: ["angular", "nodejs", "mongodb", "vuejs", "java", "aws"],
         },
         {
           role: "Full-stack Developer intern",
