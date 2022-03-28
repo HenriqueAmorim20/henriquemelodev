@@ -112,12 +112,11 @@ export default {
 }
 
 .experience-content {
-  /* margin: 0 0.7rem !important; */
+  margin: 0 0 0 0.7rem !important;
   padding-right: 0 !important;
 }
 
 .experience-content-divider {
-  display: flex;
   position: relative;
 }
 /* Divider que fica ao lado de cada step da experiencia */
