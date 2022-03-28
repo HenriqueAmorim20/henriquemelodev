@@ -112,7 +112,7 @@ export default {
 }
 
 .experience-content {
-  margin: 0 0.7rem !important;
+  /* margin: 0 0.7rem !important; */
   padding-right: 0 !important;
 }
 
