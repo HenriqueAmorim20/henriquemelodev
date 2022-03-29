@@ -75,7 +75,7 @@ export default {
             "This website was built as a Floral Design portfolio for a florist in Brasilia. The idea of this project is to show the products in a minalistic yet beautiful way.",
           techs: ["NuxtJS", "VueJS", "Vuetify"],
           github: "https://github.com/HenriqueAmorim20/loemi-flores",
-          link: "www.loemiflores.com.br",
+          link: "https://www.loemiflores.com.br/",
         },
         {
           name: "henrique melo",
